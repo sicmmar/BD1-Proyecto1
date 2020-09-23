@@ -12,7 +12,7 @@ fields terminated by ';' optionally enclosed by '"'
     nombre,
     correo,
     telefono,
-    fecha_registro,
+    fecha_registro "TO_DATE(:fecha_registro,'DD/MM/YYYY','NLS_DATE_LANGUAGE=ENGLISH')",
     direccion,
     ciudad,
     codigo_postal,

@@ -20,5 +20,5 @@ fields terminated by ';' optionally enclosed by '"'
     producto,
     categoria_producto,
     cantidad,
-    precio_unitario 
+    precio_unitario INTEGER EXTERNAL Terminated by Whitespace
 )

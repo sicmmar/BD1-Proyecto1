@@ -22,8 +22,8 @@ create table carga_temp (
     precio_unitario varchar(75)
 );
 
---$ORACLE_HOME/bin/sqlldr sicmmar/123456@172.18.0.2:1521/xe control=[BD1]ArchivoControl.ctl data=DataCenterData.csv log=registrolog.txt
 --sudo docker exec -it eb4d48c5b3fb /bin/bash
+--$ORACLE_HOME/bin/sqlldr sicmmar/123456@172.18.0.2:1521/xe control=[BD1]ArchivoControl.ctl data=DataCenterData.csv log=registrolog.txt
 --sudo docker cp /home/sicmmar/Documents/Bases/BD1-Proyecto1/[BD1]ArchivoControl.ctl eb4d48c5b3fb:/bases1
 
 -- CREAR TABLAS DEL MODELO 

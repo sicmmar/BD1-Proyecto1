@@ -36,7 +36,7 @@ where rol.rol = carga_temp.tipo and postal.numero_postal = carga_temp.codigo_pos
 
 
 insert into transaccion(cantidad,precio_total,cod_producto,cod_persona,cod_compania)
-select distinct carga_temp.cantidad, TO_NUMBER(carga_temp.cantidad*carga_temp.precio_unitario, '9999.99'),  producto.cod_producto, 
+select distinct carga_temp.cantidad, TO_NUMBER(carga_temp.cantidad*carga_temp.precio_unitario, '9999999.99'),  producto.cod_producto, 
 persona.cod_persona, compania.cod_compania
 from carga_temp, producto, persona, compania
 where producto.nombre = carga_temp.producto and persona.nombre = carga_temp.nombre and compania.nombre = carga_temp.nombre_compania;
